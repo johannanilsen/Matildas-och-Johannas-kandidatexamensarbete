@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Audio version="1.0" timeUnit="ms" gain="-10dB">
+  <Chain>
+    <AudioBufferSourceNode  id="sound1" src="sound1.wav">
+        <playbackRate value="1" follow="x1" mapin="0 364" mapout="0.5 2" curve="easeIn"></playbackRate>
+     </AudioBufferSourceNode>
+     <BiquadFilterNode type="lowpass">
+      <frequency value="20000" follow="y1" mapin="0 200" mapout="20 20000" curve="easeIn"></frequency>
+    </BiquadFilterNode>
+    <BiquadFilterNode type="highpass">
+      <frequency value="0" follow="y1" mapin="200 364" mapout="0 5000" curve="easeIn"></frequency>
+    </BiquadFilterNode>
+  </Chain>
+  
+</Audio>
+
+

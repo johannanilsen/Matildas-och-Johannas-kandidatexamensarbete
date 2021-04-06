@@ -1,0 +1,400 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+
+.from{
+  display: flex;
+
+}
+
+.mitten{
+  display: flex;
+  justify-content: center;
+
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: flex-start; /* adjustment */
+  position: relative; /* new */
+  background-color: #ecdff5;
+  width: 100%;
+  height: 9vh;
+  font-family: Song;
+  font-size: 5vh;
+  align-items: center;
+  
+}
+.header_text{
+  padding: 20px;
+  color:black;
+}
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.header_info{
+  display: flex;
+  justify-content: center; /* adjustment */
+  color: black;
+  width: 100%;
+  height: 7vh;
+  font-family: Song;
+  font-size: 38px;
+  padding-bottom: 10px;
+  padding-top: 40px;
+  margin: 15px;
+}
+
+.infoBig{
+  display: flex; 
+  flex-direction: column;
+}
+
+.horizontal_aligment{
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  margin: 20px;
+}
+
+.whyhowwhat{
+  font-family: Song;
+  font-size: 27px;
+  margin-right: 20px;
+  border-radius: 23px;
+  padding: 3px;
+  padding-left: 15px;
+  padding-right: 10px;
+  height: 32px;
+
+}
+
+.whyhowwhat_text{
+  font-family: Cafe;
+  font-size: 20px;
+}
+
+#why{
+  background-color: #ffdfd3;
+
+}
+#how{
+background-color: #e0f8f5;
+
+}
+#what{
+background-color: #f6ecf5;
+}
+#important{
+  background-color: #d67171;
+
+}
+
+.whyhowwhat_text_important{
+  font-family: Cafe;
+  font-size: 20px;
+}
+.info_checkbox{
+
+margin-top: 40px;
+flex-direction: row;
+}
+.checkbox{
+margin: 20px;
+font-family: Cafe;
+font-size: 20px;
+}
+
+.info_checkbox{
+  display: flex;
+  flex-direction: row;
+
+}
+
+input[type=checkbox] {
+  transform: scale(2);
+  margin-right: 5mm;
+  
+}
+
+.arrow{
+  height: 2cm;
+  display: flex;
+  justify-content: center;
+  margin-top: 1cm;
+}
+
+
+
+.toKnapp{
+  background-color: #c0d9ec;
+  border: none;
+  color: black;
+  padding: 12px 28px;
+  width: 200px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  border-radius: 40px;
+  font-family: Song;
+  transition: all 0.2s ease-in-out;
+  margin: 10px;
+}
+
+.distoEnkat{
+  background-color: #c0d9ec;
+  border: none;
+  color: black;
+  padding: 12px 28px;
+  width: 200px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  border-radius: 40px;
+  font-family: Song;
+  transition: all 0.2s ease-in-out;
+  margin: 10px;
+}
+
+.redthing{
+  color: red;
+}
+
+.question{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 7px;
+
+}
+.toKnapp:hover {
+  transform: scale(1.015);
+  cursor:pointer;
+  opacity: 0.9;
+
+}
+.tillmittenpls{
+  display: flex;
+  justify-content: center;
+}
+
+.rubrik{
+  font-family: Song;
+  text-decoration: underline;
+  font-size: 1cm;
+  padding-top: 1cm;
+  padding-bottom: 0.3cm;
+  text-align: center ;
+}
+
+.enkatcont{
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  font-family: Song;
+  font-size: 0.6cm;
+}
+.musikaliskbakgrund{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.box{
+  width: 400px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  box-sizing: border-box;
+  margin-bottom: 0.4cm;
+  font-family: Cafe;
+  font-size: 14px;
+  border-color: black;
+  border-radius: 4px;
+  border-width: 0.5px;
+}
+
+
+@keyframes trembling {
+	0% {transform:translateX(0) rotate(0deg); }
+	20% {transform:translateX(-10px) rotate(-2deg);}
+	40% {transform:translateX(10px) rotate(2deg);}
+	60% {transform:translateX(-10px) rotate(-2deg); }
+	80% {transform: translateX(10px) rotate(2deg);}
+	100%{transform: translateY(0) rotate(0deg); }
+}
+
+.redbox {
+  width: 400px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  box-sizing: border-box;
+  margin-bottom: 0.4cm;
+  font-family: Cafe;
+  font-size: 14px;
+  border-color: #d67171;
+  border-radius: 4px;
+  border-width: 0.5px;
+	animation: trembling 0.5s ;
+ 
+}
+
+.box:focus {
+  background-color:rgba(239, 246, 248, 0.945) ;
+}
+
+.feelings{
+  padding: 7px;
+  font-family: Cafe;
+  display: flex;
+  flex-direction: row;
+}
+.feelingTitleRight {
+  font-family: CafeB;
+  font-size: 18px;
+  width: 100%;
+  display: block;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.feelingTitleLeft {
+  font-family: CafeB;
+  font-size: 18px;
+  width: 100%;
+  display: block;
+  text-align: right;
+  padding-right: 20px;
+}
+
+.feeling{
+  transform: scale(1.2);
+  margin-right: 12px;
+  margin-left: 6px;
+}
+
+@font-face {
+  font-family: CreamCake;
+  src: url(fonts/CreamCake.otf);
+
+}
+
+@font-face {
+  font-family: Song;
+  src: url(fonts/Song.ttf);
+
+}
+
+@font-face {
+  font-family: Cafe;
+  src: url(fonts/Cafe.ttf);
+
+}
+@font-face {
+  font-family: CafeB;
+  src: url(fonts/CafeBold.ttf);
+
+}
+
+
+
+#touchArea {
+  background-color: grey;
+  border: 1px solid red;
+  height: 10cm;
+  width: 10cm;
+
+}
+
+.radio_hearphones{
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.radio_hearphones_butt{
+}
+
+
+.demo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.demo1{
+  background-color: #ffdfd3;
+  margin: 1.5cm;
+  margin-bottom: 0.5cm;
+  width: 400px;
+  height: 400px;
+  border: 2.5px solid black;
+
+}
+.demo2{
+  background-color: #c0d9ec;
+  margin: 1.5cm;
+  width: 400px;
+  height: 400px;
+  border: 2.5px solid black;
+
+}
+
+.demodiv{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.ball{
+
+width: 40px;
+height: 40px;
+border-radius: 29px;
+box-shadow: #ecdff5;
+position: absolute;
+background-color: black;
+cursor:pointer;
+
+}
